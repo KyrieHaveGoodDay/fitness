@@ -253,19 +253,20 @@ footer {
     justify-items: center;
   }
 }
-.intoduce_one_card div {
+.intoduce_one_card .intoduce_list {
+  text-align: center;
+}
+.intoduce_one_card .intoduce_list .list_img {
   width: 100px;
   height: 100px;
-  border: 1px solid #aaa;
   padding: 20px;
   margin: 10px;
   border-radius: 50%;
   text-align: center;
+  background: red;
 }
 
 .intoduce_two_card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
 @media screen and (max-width: 767px) {
@@ -275,23 +276,41 @@ footer {
 }
 .intoduce_two_card .card {
   border: 1px solid #000;
-}
-@media screen and (max-width: 767px) {
-  .intoduce_two_card .card {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 }
 .intoduce_two_card .card .card_top {
   display: flex;
-  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .intoduce_two_card .card .card_top {
+    display: block;
+  }
 }
 .intoduce_two_card .card .card_top img {
   width: 150px;
-  height: 150px;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .intoduce_two_card .card .card_top img {
+    width: 100%;
+  }
+}
+.intoduce_two_card .card .card_top p {
+  margin: 0;
+  font-weight: bold;
+}
+.intoduce_two_card .card .card_top p span {
+  color: red;
+  font-weight: bold;
+}
+.intoduce_two_card .card .card_top ul {
+  margin: 0;
 }
 .intoduce_two_card .card .card_bom {
   font-size: 24px;
   text-align: center;
+  border-bottom: 1px solid #000;
 }
 
 .fitness {
